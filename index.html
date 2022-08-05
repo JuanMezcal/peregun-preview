@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,600;1,100;1,200;1,400&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Site</title>
+</head>
+
+<body>
+    <header>
+        <a class="logo" href="#">Pèrègún <span>.</span></a>
+        <!-- <div class="menuToggle" onclick="toggleMenu();"></div> -->
+        <div class="nav">
+            <ul class="navigation">
+                <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu();">Sobre</a></li>
+                <li><a href="#services" onclick="toggleMenu();">Serviços</a></li>
+                <li><a href="#catalog" onclick="toggleMenu();">Catalogo</a></li>
+                <li><a href="#blog" onclick="toggleMenu();">Blog</a></li>
+                <!-- <li><i class="ri-moon-line change-theme" id="theme-button"></i></li> -->
+            </ul>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <!-- 
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div> -->
+                <div class="menuToggle" onclick="toggleMenu();"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="content">
+            <h2>Pèrègún - Floricultura</h2>
+            <h3>Plantas para melhorar a sua vida</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dignissimos consequatur a est
+                culpa. Quos
+                aspernatur
+                consequatur exercitationem modi. Esse soluta magnam dolore rerum illo fugiat fugit voluptate
+                repellat
+                dignissimos!
+            </p>
+            <a href="#menu" class="btn">Catalogo</a>
+            <div class="contact">
+                <p>
+                    <i class="ri-map-pin-fill"></i> Rua Riachuelo, 1494 - Padre Eustáquio - BH
+                </p>
+                <p>
+                    <i class="ri-whatsapp-fill"></i></ion-icon> (31) 9781-3064
+                </p>
+                
+                <ul class="social__home">
+                    <li><a href="#" target="_blank"><i class="ri-facebook-box-line"></i></a></li>
+                    <li><a href="https://www.instagram.com/peregun.floricultura/" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="ri-medium-line"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="imgBx">
+            <img src="./img/home.png" alt="">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="title">
+            <h2 class="titleText">Sobre</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fugit, similique voluptatibus numquam
+                tenetur ipsa qui est, quis voluptatum earum eveniet sapiente ea tempora libero totam, molestias rem.
+                Voluptatibus, tempora?</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fugit, similique voluptatibus numquam
+                tenetur ipsa qui est, quis voluptatum earum eveniet sapiente ea tempora libero totam, molestias rem.
+                Voluptatibus, tempora?</p>
+
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="title">
+                <h2 class="titleText">Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fugit, similique voluptatibus numquam
+                    tenetur ipsa qui est, quis voluptatum earum eveniet sapiente ea tempora libero totam, molestias rem.
+                    Voluptatibus, tempora?</p>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="./img/floricultura.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Floral</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id accusamus quibusdam quo corrupti
+                            quos, perferendis aliquam harum excepturi animi facere!</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="imgBx">
+                        <img src="./img/manutencao floricultura.png" alt="">
+                    </div>
+                    <div class="text">
+                        <h3>Manutenção</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id accusamus quibusdam quo corrupti
+                            quos, perferendis aliquam harum excepturi animi facere!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalog" id="catalog">
+        <div class="content">
+            <div class="textBox">
+                <h2>Nosso catalogo</h2>
+                <h3>Plantinhas criadas com carinho</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dignissimos consequatur a est
+                    culpa. Quos
+                    aspernatur
+                    consequatur exercitationem modi. Esse soluta magnam dolore rerum illo fugiat fugit voluptate
+                    repellat
+                    dignissimos!
+                </p>
+            </div>
+
+            <div class="imgBx">
+                <div class="circle"></div>
+                <img src="./img/product2.png" alt="" class="plants">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="./img/product3.png" onclick="imgSlider('./img/product3.png');">
+            </li>
+            <li><img src="./img/product4.png" onclick="imgSlider('./img/product4.png');">
+            </li>
+            <li><img src="./img/product5.png" onclick="imgSlider('./img/product5.png');">
+            </li>
+            <li><img src="./img/product6.png" onclick="imgSlider('./img/product6.png');">
+            </li>
+        </ul>
+    </section>
+
+    <section class="blog" id="blog">
+        <div class="imgBx">
+            <img src="./img/blog-floricultura-peregun.png" alt="">
+        </div>
+        <div class="content">
+            <h2>Visite nosso blog</h2>
+            <h3>Fique por dentro das novidades</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis dignissimos consequatur a est
+                culpa. Quos
+                aspernatur
+                consequatur exercitationem modi. Esse soluta magnam dolore rerum illo fugiat fugit voluptate
+                repellat
+                dignissimos!
+            </p>
+            <a href="#blog" class="btn">Visitar blog</a>
+        </div>
+    </section>
+
+    <section class="video" id="video">
+        <div class="title">
+            <h2 class="titleText">Visite o cantinho Pèrègún </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab fugit, similique voluptatibus numquam
+                tenetur ipsa qui est, quis voluptatum earum eveniet sapiente ea tempora libero totam, molestias rem.
+                Voluptatibus, tempora?</p>
+        </div>
+        <video width="560" height="315" autoPlay loop muted controls class="video_container">
+            <source src="./img/peregun video.mp4" />
+        </video>
+
+    </section>
+
+
+
+
+    <section class="footer">
+        <div class="element">
+            <h2>Endereço</h2>
+            <p>Rua Riachuelo, 1494
+                Padre Eustáquio | BH - MG
+                CEP: xxxxxx</p>
+        </div>
+        <div class='element'>
+            <h2>Contato</h2>
+            <p>31 9781-3064</p>
+
+            <ul class="social__footer">
+                <li><a href="#" target="_blank"><i class="ri-facebook-box-line"></i></a></li>
+                <li><a href="https://www.instagram.com/peregun.floricultura/" target="_blank"><i class="ri-instagram-line"></i></a></li>
+                <li><a href="#" target="_blank"><i class="ri-medium-line"></i></a></li>
+            </ul>
+        </div>
+        <div class="element">
+            <h2>Endereço</h2>
+            <p>Rua Riachuelo, 1494
+                Padre Eustáquio | BH - MG
+                CEP: xxxxxx</p>
+        </div>
+
+    </section>
+
+    <div class="copyrightText">
+        <p>Copyright 2022. All right Reserved</p>
+    </div>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/main.js"></script>
+</body>
