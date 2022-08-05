@@ -741,6 +741,10 @@ header.sticky .navigation li a:hover {
         padding: 3rem 2rem;
         flex-direction:column;
     }
+    video
+    {
+        width:80%;
+    }
 
         /* video {
             padding: 3rem 2rem;
