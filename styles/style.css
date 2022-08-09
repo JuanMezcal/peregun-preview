@@ -140,7 +140,7 @@ header.sticky .navigation li a:hover {
 .social__home
 {
     position: relative;
-    z-index: 10000;
+    /* z-index: 10000; */
     display: flex;
     justify-content: space-between;
     /* align-items: center; */
@@ -524,7 +524,7 @@ header.sticky .navigation li a:hover {
 .social__footer
 {
     position: relative;
-    z-index: 10000;
+    /* z-index: 10000; */
     display: flex;
     align-items: center;
     column-gap: 2rem;
@@ -743,7 +743,7 @@ header.sticky .navigation li a:hover {
     }
     video
     {
-        width:80%;
+        width:100%;
     }
 
         /* video {
